@@ -1,0 +1,171 @@
+*{
+    background-color: rgb(33, 121, 121);
+}
+.container{
+    width: 1300px;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.child{
+    display: grid;
+    place-items: center;
+    width: 300px;
+    height: 412px;
+    border: 1px solid black;
+    margin: 10px;
+   }
+
+.container .child .box1{
+    color: aliceblue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.box1 div:after{
+    content: 'LIFESTYLE';
+    animation: text1 6s infinite;
+    background-color: darkcyan;
+    
+}
+@keyframes text1{
+    30%
+    {
+        content: 'WORK';
+        background-color: darkorange;
+    } 
+    60%
+    {
+        content: 'EVERYTHING';
+        background-color: brown;
+    } 
+}
+.container > .child > .box2{
+    color: aliceblue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.box2 div:after{
+    content: 'WORK';
+    animation: text2 6s infinite;
+    background-color: darkorange;
+    
+}
+@keyframes text2{
+    
+    30%
+    {
+        content: 'EVERYTHING';
+        background-color: brown;
+    } 
+    60%
+    {
+        content: 'LIFESTYLE';
+        background-color: darkcyan;
+    } 
+}
+.container .child .box3{
+    color: aliceblue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+}
+.box3 div:after{
+    content: 'EVERYTHING';
+    animation: text3 6s infinite;
+    background-color: brown;
+    
+}
+@keyframes text3{
+    
+    30%
+    {
+        content: 'LIFESTYLE';
+        background-color: darkcyan;
+    } 
+    60%
+    {
+        content: 'WORK';
+        background-color: darkorange;
+    } 
+}
+.calander{
+    width: 300px;
+    height: auto;
+    background: #fff;
+    box-sizing: border-box;
+}
+.calander .number:hover{
+    background: #6a6aee;
+    color: #fff;
+}
+
+.calander .date
+    {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25px, 2fr));
+    column-gap: 10px;
+    row-gap: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    }
+
+
+.day{
+    font-weight: 700;
+    }
+
+.calander .date .day:first-child,
+.calander .date .number:nth-child(7n + 1)
+    {
+    color:  darkorange;
+    }
+
+.calander .date .number:nth-child(7n + 1):hover
+    {
+    background: #6a6aee;
+    color: #fff;
+    }
+.calander .date .number 
+    {
+        color: #fff;
+    }
+
+.calander .date .number.active
+    {
+    background: #6a6aee;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+
+    }
+
+.calander > .image
+    {
+    width: 100%;
+    height: 204px;
+    background: url(360_F_294816453_1gmmhdWYF8AWARQ2dHznxszjrPeYbvYT.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 30px;
+    }
+
+.calander .image h2,
+.calander .image h3
+    {
+    background:none;
+    color: #fff;
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    }
+.calander .image h3
+    {
+    font-weight: 500;
+    }
+    
